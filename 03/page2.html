@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style2.css">
+</head>
+<body>
+    <h3>Привіт! Зараз я допоможу тобі</h3>
+    <div>
+        <h4>Вибери що саме ти хочеш підрахувати?</h4>
+        <form>
+            <input type="checkbox" id="gas" name="gas" value="Газ">
+            <label for="gas"> Газ</label><br>
+
+            <input type="checkbox" id="light" name="vlight" value="Світло">
+            <label for="light"> Світло</label><br>
+
+            <input type="checkbox" id="water" name="water" value="Воду">
+            <label for="water"> Воду</label><br>
+        </form>
+        <form>
+            <h4>Яким чином будеш розраховуватись?</h4>
+            <input type="radio" id="cash" name="payment" value="Готівка">
+            <label for="cash">Готівка</label><br>
+
+            <input type="radio" id="bank card" name="payment" value="Банківська карта">
+            <label for="bank card">Банківська карта</label>
+        </form>
+        <form>
+            <h4>Вкажіть номер телефону та email</h4>
+            <p>За вказаною інформацією ми відправимо Вам квитанцію.</p>
+
+            <label for="email">Введіть Ваш email:</label>
+            <input type="email" id="email" name="email">
+            <input type="button" onclick="alert('Дякуємо за оплату.')" value="Надіслати">
+        </form>
+    </div>
+    
+</body>
+</html>

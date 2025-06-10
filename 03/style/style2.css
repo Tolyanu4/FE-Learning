@@ -1,0 +1,15 @@
+body{
+    background-color: green;
+}
+
+h3{
+    background-color: grey;
+    text-align: center;
+}
+h4{
+    background-color: blue;
+    color: beige;
+}
+label{
+    color: rgb(173, 166, 166);
+}

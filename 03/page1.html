@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style1.css">
+</head>
+<body>
+    <h1>Ласкаво просимо!</h1>
+    <h2>Будь ласка авторизуйтесь</h2>
+    
+    <form action="page2.html" method="get">    
+        <div>
+            <label for="number">Введіть розрахунковий рахунок:</label><br>
+            <input id="number" type="text" required>
+        </div><br>
+        
+        <div>
+            <label  for="userpassword">Введіть пароль:</label><br>
+            <input id="userpassword" type="password" required><br><br>
+            <!---<button onclick="window.location.href='page2.html'">Надіслати</button>--->
+            <input type="submit" value="Надіслати"> 
+            <!--- Звісно тут потрібно так:
+            <a href="page2.html">Надіслати</a>
+            але так некрасиво і непрацює "required"))))) -->
+            
+        </div>
+
+    </form>
+</body>
+</html>
