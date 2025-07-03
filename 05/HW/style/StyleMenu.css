@@ -55,8 +55,8 @@ input {
   margin-top: 29px;
 }
 .food-item-bg{
-  width: 74px;
-  height: 74px;
+  width: 75px;
+  height: 75px;
   border-radius: 12px;
   background-color: #EAE2B7;
   margin-right: 26px;
@@ -91,16 +91,19 @@ p {
 }
 .burger-card{
   display: flex;
-  margin-top: 26px;
+  margin: 26px 0 26px 24px;
   width: 316px;
   height: 88px;
 }
-
+.burger-card>img{
+  width: 75px;
+  height: 75px;
+}
 h5{
   color: red;
   margin-left: 8px;
 }
 .food-item-bg h4 {
-    margin: 0;
-    font-size: 16px;
+  margin-top: 20px;
+  font-size: 16px;
 }
