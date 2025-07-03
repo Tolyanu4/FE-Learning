@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(32, 128, 212);
+}
+section{
+  width: 360px;
+  height: 800px;
+  padding-left: 22px;
+  padding-right: 20px;
+  border-radius: 20px;
+  background-color: aliceblue;
+  margin-left: auto;
+  margin-right: auto;
+}
+button {
+  width: 30px;
+  height: 30px;
+  margin-top: 56px;
+  margin-left: 8px;
+}
+.menu {
+    font-size: 32px;
+    width: 87px;
+    height: 39px;
+    margin-top: 23px;
+  
+}
+input {
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #EFEFEF;
+  width: 316px;
+  height: 44px;
+  margin-top: 17px;
+}
+.oswald{
+    font-family: "oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.food-row{
+  display: flex;
+  justify-content:space-around;
+  margin-top: 29px;
+}
+.food-item-bg{
+  width: 74px;
+  height: 74px;
+  border-radius: 12px;
+  background-color: #EAE2B7;
+  margin-right: 26px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+h4{
+  margin: 8px 0 0 8px;
+}
+.food-item-bg:hover {
+  background-color: #c9b232;
+  
+}
+h3{
+  font-family: "oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  color: #003049;
+  margin-top: 32px;
+}
+p {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+.burger-card{
+  display: flex;
+  margin-top: 26px;
+  width: 316px;
+  height: 88px;
+}
+
+h5{
+  color: red;
+  margin-left: 8px;
+}
+.food-item-bg h4 {
+    margin: 0;
+    font-size: 16px;
+}
