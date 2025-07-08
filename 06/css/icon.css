@@ -1,0 +1,55 @@
+*body{
+    background-color: rgb(34, 179, 179);
+    display: flex;
+    align-content: space-between;
+}
+.diia{
+    width: 512px;
+    height: 512px;
+    background-color: black;
+    
+}
+.vector{
+    width: 310px;
+    height: 182px;
+    padding: 128px 101px 0 101px;
+}
+.flag{
+    width: 80px;
+    height: 60px;
+    padding: 33px 216px 109px 216px;
+}
+.square{
+    display:flex;
+    width: 512px;
+    height: 512px;
+    background-color: yellow;
+    flex-direction: column;
+    z-index: 1;
+}
+.Glyph{
+    width: 400px;
+    height: 227px;
+    z-index: 3;
+    margin: 144px 57px;
+    position: absolute;
+    
+}
+.flag_1{
+    width: 512px;
+    height: 272px;
+    z-index: 2;
+}
+.circle{
+    width: 512px;
+    height: 512px;
+    background-color: yellow;
+    border-radius: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+.Glyph_1{
+    margin: 0 76px 88px 65px;
+    z-index: 3;
+    position: absolute;
+}
