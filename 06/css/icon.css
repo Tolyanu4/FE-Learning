@@ -1,4 +1,4 @@
-*body{
+body{
     background-color: rgb(34, 179, 179);
     display: flex;
     align-content: space-between;
@@ -7,7 +7,8 @@
     width: 512px;
     height: 512px;
     background-color: black;
-    
+    position: relative;
+
 }
 .vector{
     width: 310px;
@@ -24,8 +25,11 @@
     width: 512px;
     height: 512px;
     background-color: yellow;
-    flex-direction: column;
-    z-index: 1;
+    /* flex-direction: column; */
+    z-index: 2;
+    position: relative;
+    Top: 385px;
+    Left: -62px;
 }
 .Glyph{
     width: 400px;
@@ -39,17 +43,40 @@
     width: 512px;
     height: 272px;
     z-index: 2;
+    position: relative;
+    /* margin-left: -35px; */
+}
+.flag_2{
+    width: 512px;
+    height: 272px;
+    z-index: 2;
+    position: relative;
+    margin-left: -35px;
 }
 .circle{
     width: 512px;
     height: 512px;
-    background-color: yellow;
+    position: absolute;
+    top: 760px;
+    left: 920px;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle_1{
+    width: 444px;
+    height: 444px;
     border-radius: 100%;
     overflow: hidden;
-    z-index: 1;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
 }
 .Glyph_1{
-    margin: 0 76px 88px 65px;
+    margin: -25px 76px 88px 45px;
     z-index: 3;
-    position: absolute;
+    position: relative;
 }
