@@ -3,9 +3,13 @@ body{
     display: flex;
     align-content: space-between;
 }
-.diia{
+.diia, .square, .circle{
     width: 512px;
     height: 512px;
+}
+.diia{
+    /* width: 512px;
+    height: 512px; */
     background-color: black;
     position: relative;
 
@@ -22,8 +26,8 @@ body{
 }
 .square{
     display:flex;
-    width: 512px;
-    height: 512px;
+    /* width: 512px;
+    height: 512px; */
     background-color: yellow;
     /* flex-direction: column; */
     z-index: 2;
@@ -39,23 +43,27 @@ body{
     position: absolute;
     
 }
-.flag_1{
+.flag_1, .flag_2{
     width: 512px;
     height: 272px;
+}
+.flag_1{
+    /* width: 512px;
+    height: 272px; */
     z-index: 2;
     position: relative;
     /* margin-left: -35px; */
 }
 .flag_2{
-    width: 512px;
-    height: 272px;
+    /* width: 512px;
+    height: 272px; */
     z-index: 2;
     position: relative;
     margin-left: -35px;
 }
 .circle{
-    width: 512px;
-    height: 512px;
+    /* width: 512px;
+    height: 512px; */
     position: absolute;
     top: 760px;
     left: 920px;
@@ -70,8 +78,8 @@ body{
     height: 444px;
     border-radius: 100%;
     overflow: hidden;
-    position: relative;
-    align-items: center;
+    /* position: relative;
+    align-items: center; */
     justify-content: center;
     background-color: yellow;
 }
