@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body{
+    height: 100%;
+    background-image: url("../image/netflix-BG.png");
+    padding: 30px 40px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.log{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.date{
+    width: 213px;
+    height: 44px;
+    color: rgba(200, 200, 200, 1.00);
+    font-family: "Dancing Script", serif;
+    font-weight: 400;
+    font-size: 24px;
+    align-content: center;
+}
+.date strong{
+    display: inline-block;
+    margin-left: 18px;
+    padding-left: 18px;
+    border-left: 2px solid white;
+}
+.p_User{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.p_User i {
+    color: #f4f7fb;
+    font-size: 25px;
+}
+.button_Search{
+    display: flex;
+    margin: 35.5px 16px;
+    width: 43px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+button{
+    display: flex;
+    background: transparent;
+    border: none;
+    
+}
+.i_User{
+    display: flex;
+    width: 74px;
+    height: 74px;
+    border-radius: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+
+
+.content_text{
+  max-width: 61%;
+  padding-top: 100px;
+}
+.genres{
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 1.00);
+}
+.genres span{
+    display: inline-block;
+    margin-left: 18px;
+    padding-left: 18px;
+    border-left: 2px solid white;
+}
+.genres span:first-child{
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+}
+h1{
+    font-family: "Inter", serif;
+    font-weight: 600;
+    font-size: 64px;
+    color: rgba(255, 255, 255, 1.00);
+    padding-top: 30px;
+}
+.info{
+    margin: 20px 2px;
+}
+.info .first{
+    display: inline-block;
+    margin-left: 18px;
+    padding-left: 18px;
+    border-left: 2px solid white;
+}
+.info .first:first-child{
+    display: inline-block;
+    margin-left: 0px;
+    padding-left: 0px;
+    border-left: none;
+}
+.first{
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: white;
+}
+.secondary{
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: #928a83;
+}
+.third{
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #928a83;
+    width: 863px;
+}
+.stars{
+    font-size: 24px;
+    color: gray;
+    margin-top: 20px;
+}
+.star_filled{
+    color: gold;
+}
+.active{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.play{
+    width: 272px;
+    height: 64px;
+    background-color:  red;
+    color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+.play:hover{
+    background-color: white;
+    color: black;
+}
+.episodes{
+    width: 272px;
+    height: 64px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: white;
+    border: 4px solid #FFFFFF;
+}
+.episodes:hover{
+    background-color: ghostwhite;
+    color: black;
+}
+.next{
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    font-family: "Inter", serif;
+    font-weight: 400;
+    color: white;
+}
+.next{
+    margin-top: 70px;
+}
+.arrows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LEFT, .RIGHT {
+    display: flex;
+    width: 41px;
+    height: 41px;
+}
+
+.LEFT button,
+.RIGHT button {
+    width: 41px;
+    height: 41px;
+    /* cursor: pointer; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* background: transparent; */
+    border: none;
+    /* transition: background-color 0.3s ease; */
+}
+
+/* .LEFT button:hover,
+.RIGHT button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+} */
+
+.LEFT i,
+.RIGHT i {
+    color: #9a9c9e9f;
+    /* transition: color 0.3s ease; */
+}
+
+.LEFT button:hover i,
+.RIGHT button:hover i {
+    color: white;
+}
+.age_info{
+    position: fixed;
+    bottom: 100px;
+    color: white;
+    background-color: rgb(128, 125, 125);
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 24px;
+    line-height : 141.52%;
+    padding: 15px 66px 15px 26px;
+    right: 0;
+    border-left: 33px solid rgb(213, 13, 31);
+}
