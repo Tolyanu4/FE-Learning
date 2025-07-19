@@ -127,7 +127,7 @@ h1{
     font-weight: 400;
     font-size: 20px;
     color: #928a83;
-    width: 863px;
+    width: 864px;
 }
 .stars{
     font-size: 24px;
@@ -175,25 +175,24 @@ h1{
 .next{
     display: flex;
     justify-content: space-between;
+    margin-top: 70px;
 }
 h3{
     font-family: "Inter", serif;
     font-weight: 400;
     color: white;
 }
-.next{
-    margin-top: 70px;
-}
+
 .arrows{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.LEFT, .RIGHT {
+/* .LEFT, .RIGHT {
     display: flex;
     width: 41px;
     height: 41px;
-}
+} */
 
 .LEFT button,
 .RIGHT button {
@@ -217,7 +216,7 @@ h3{
 .LEFT i,
 .RIGHT i {
     color: #9a9c9e9f;
-    /* transition: color 0.3s ease; */
+    transition: color 0.3s ease;
 }
 
 .LEFT button:hover i,
