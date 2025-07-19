@@ -224,6 +224,11 @@ h3{
 .RIGHT button:hover i {
     color: white;
 }
+.films{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
 .age_info{
     position: fixed;
     bottom: 100px;
