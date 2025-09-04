@@ -1,80 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    box-sizing: border-box;
+}
 body{
     background-image: url("../image/netflix-BG.png");
-    padding: 70px 33px 49px 40px;
+    /* padding: 70px 33px 49px 40px; */
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     background-attachment: fixed;
     background-color: black;
+    padding-bottom: 50px;
 }
 header{
+    padding: 42px 42px 118px 80px;
     display: flex;
     justify-content: space-between;
-}
-.log{
-    display: flex;
-    flex-direction: row;
     align-items: center;
 }
-.date{
-    width: 213px;
-    height: 44px;
-    color: rgba(200, 200, 200, 1.00);
+.log,
+.p_User{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.log span{
+    display: inline-block;
+    padding-left: 42px;
+    color: white;
+    color: rgb(200, 200, 200,);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    position: relative;
     font-family: "Dancing Script", serif;
     font-weight: 400;
-    font-size: 24px;
-    align-content: center;
+    font-size: 26px;
+
 }
+.log span::before{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 28px;
+    background-color: white;
+    position: absolute;
+    left: 22px;
+}
+
 .date strong{
-    display: inline-block;
+    display: block;
     margin-left: 18px;
     padding-left: 18px;
     border-left: 2px solid white;
 }
 .p_User{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: flex-end;
+    column-gap: 45px;
+}
+.p_User button{
+    font-size: 35px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 .p_User i {
     color: #f4f7fb;
-    font-size: 25px;
+    font-size: 41px;
 }
-.button_Search{
-    display: flex;
-    width: 43px;
-    height: 43px;
-    text-align: center;
-    border-radius: 100%;
-    border: 1.5px;
-    margin-right: 45px;
-}
-button{
-    display: flex;
-    background: transparent;
-    border: none;
-    
-}
+
 .i_User{
-    display: flex;
     width: 74px;
     height: 74px;
     border-radius: 100%;
     overflow: hidden;
-    justify-content: center;
+}
+.i_User img{
+    width: 100%;
 }
 
-
-.content_text{
-  max-width: 61%;
-  padding-top: 100px;
+main{
+    padding-left: 80px;
+    max-width: 989px;
 }
 .genres{
     font-family: "Inter", serif;
-    font-weight: 400;
-    font-size: 32px;
-    color: rgba(255, 255, 255, 1.00);
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 39px;
 }
 .genres span{
     display: inline-block;
@@ -88,65 +103,74 @@ button{
     border-left: none;
 }
 h1{
+    margin-top: 60px;
+    margin-bottom: 17px;
     font-family: "Inter", serif;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 64px;
     color: rgba(255, 255, 255, 1.00);
     padding-top: 30px;
 }
 .info{
-    margin: 20px 2px;
-}
-.info .first{
-    display: inline-block;
-    margin-left: 18px;
-    padding-left: 18px;
-    border-left: 2px solid white;
-}
-.info .first:first-child{
-    display: inline-block;
-    margin-left: 0px;
-    padding-left: 0px;
-    border-left: none;
-}
-.first{
     font-family: "Inter", serif;
+    font-size: 29px;
     font-weight: 400;
-    font-size: 26px;
+    line-height: 1;
     color: white;
+    display: flex;
+    column-gap: 46px;
 }
-.secondary{
-    font-family: "Inter", serif;
-    font-weight: 400;
-    font-size: 26px;
+.info div{
+    position: relative;
+}
+.info div::before{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 28px;
+    background-color: white;
+    position: absolute;
+    left: -22px;
+}
+.info div:first-child::before{
+    display: none;
+}
+.info span{
     color: #928a83;
 }
 .third{
-    display: block;
     font-family: "Inter", serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 24px;
     color: #928a83;
-    width: 864px;
-    height: 130px;
+    line-height: 29px;
+    margin: 20px 0 45px 0;
 }
 .stars{
-    font-size: 24px;
-    color: gray;
-    margin-top: 20px;
+    display: flex;
+    column-gap: 15px;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
 }
-.star_filled{
-    color: gold;
+.stars i{
+    display: inline-block;
+}
+.fa-solid.fa-star{
+    color: yellow;
+}
+.stars i:hover{
+    color: yellow;
 }
 .active{
     width: 600px;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    padding: 54px 0;
 }
 
 .play{
-    width: 272px;
+    min-width: 272px;
     height: 64px;
     background-color:  red;
     color: white;
@@ -161,12 +185,13 @@ h1{
     color: black;
 }
 .episodes{
-    width: 272px;
+    min-width: 272px;
     height: 64px;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
     font-size: larger;
+    background-color: transparent;
     color: white;
     border: 4px solid #FFFFFF;
     cursor: pointer;
@@ -178,53 +203,41 @@ h1{
 .next{
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
+    align-items: flex-start;
 }
-h3{
-    font-family: "Inter", serif;
-    font-weight: 400;
-    color: white;
+.next h3{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 144.52%;
+    letter-spacing: 5px;
 }
-
 .arrows{
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     column-gap: 24px;
 }
-
-.LEFT button,
-.RIGHT button {
+.arrows button{
     width: 41px;
     height: 41px;
     font-size: 18px;
-    /* justify-content: center;
-    align-items: center; */
-    text-align: center;
+    border: 1.5px solid rgb(255, 255, 255);
     border-radius: 100%;
-    border: 1.5px;
+    text-align: center;
+    color: white;
     background-color: transparent;
     cursor: pointer;
 }
 
-.LEFT i,
-.RIGHT i {
-    color: #9a9c9e9f;
-    /* transition: color 0.3s ease; */
-}
-
-.LEFT button:hover i,
-.RIGHT button:hover i {
-    color: white;
+.arrows button:hover{
+    color: rgb(167, 166, 166);
+    border: 1.5px solid rgb(167, 166, 166);
 }
 .films{
     display: flex;
     justify-content: space-between;
-    margin-top: 18px;
+    padding-top: 23px;
 }
-.films img{
-    width: 18.459%;
-}
+
 .age_info{
     position: fixed;
     bottom: 100px;
